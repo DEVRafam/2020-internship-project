@@ -11359,6 +11359,10 @@ a.text-dark:focus {
 div.rm-wrap {
   -webkit-box-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  padding: 5px 5px;
 }
 
 .rm-center {

@@ -39,7 +39,7 @@ class ThreadsController extends Controller
 
         if ($username = request('by')) {
             $id = User::where('name', $username)->firstOrFail()->id;
-            $threads = Thread::where('user_id', $id)->get();
+            $threads = Thread::where('user_id', $id)->latest()->get();
         }
 
         if (request('popularity')) {
